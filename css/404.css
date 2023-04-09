@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  #d8dee9;
+    color: #4c566a;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    margin: 0 auto;
+    
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    margin-top:  40vh;
+}
