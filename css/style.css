@@ -2,7 +2,7 @@
   margin: 0px;
   border: 0px;
   clear: both;
-  transition: 300ms;
+  transition: 150ms;
 }
 
 :root {
@@ -15,19 +15,21 @@
 }
 
 html {
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   scroll-behavior: smooth;
   font-family: var(--font-family);
   font-size: var(--default-font-size);
+  background-color: var(--bg);
+  color: var(--fg);
+  fill: var(--fg);
 }
 
 body {
-  overflow: hidden;
   position: relative;
-  scroll-behavior: smooth;
-  background-color: var(--bg);
-  color: var(--fg);
+}
+
+svg {
+  fill: var(--fg);
 }
 
 .background {
@@ -55,8 +57,8 @@ h3 {
 
 ol {
   margin-inline: auto;
-  text-align: justify;
-  list-style-type: disc;
+  text-align: center;
+  list-style-type: none;
 }
 
 :any-link {
@@ -66,8 +68,9 @@ ol {
 }
 
 .link:hover {
-  color: #78B6C8;
-  fill: #78B6C8;
+  /* color: #78B6C8;
+  fill: #78B6C8; */
+  opacity: 75%;
 }
 
 header {
@@ -75,8 +78,9 @@ header {
   top: 1rem;
   display: grid;
   grid-auto-flow: dense;
-  width: 100vw;
-  margin-inline: auto;
+  gap: 1em;
+  width: 100dvw;
+  margin: 0 auto;
   align-items: center;
   text-align: center;
   justify-items: center;
@@ -85,8 +89,8 @@ header {
 }
 
 main {
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 100%;
@@ -120,11 +124,6 @@ main {
   max-width: 40rem;
 }
 
-.colorize {
-  color: var(--fg);
-  fill: var(--fg);
-}
-
 .logo {
   height: 3rem;
 }
@@ -132,7 +131,7 @@ main {
 .navigation,
 .socialize {
   display: inline-flex;
-  gap: 1rem;
+  gap: 1em;
 }
 
 .navigation {
