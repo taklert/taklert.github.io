@@ -128,12 +128,6 @@ main {
   height: 3rem;
 }
 
-.navigation,
-.socialize {
-  display: inline-flex;
-  gap: 1em;
-}
-
 .navigation {
   grid-column: span 2;
 }
