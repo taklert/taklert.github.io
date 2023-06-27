@@ -79,6 +79,7 @@ header {
   display: grid;
   grid-auto-flow: dense;
   gap: 1em;
+  width: 100vw;
   width: 100dvw;
   margin: 0 auto;
   align-items: center;
@@ -126,12 +127,6 @@ main {
 
 .logo {
   height: 3rem;
-}
-
-.navigation,
-.socialize {
-  display: inline-flex;
-  gap: 1em;
 }
 
 .navigation {
