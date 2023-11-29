@@ -34,7 +34,7 @@ svg {
 
 .background {
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0px;
   object-position: bottom;
   object-fit: cover;
