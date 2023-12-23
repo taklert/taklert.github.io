@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6d0001;
+  color: #f8e1b8;
+  padding-inline: 1em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  min-height: 95dvh;
+  min-height: 95svh;
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 5em auto 0;
+  font-size: 5rem;
+}
+
+p {
+  font-size: 3rem;
+  padding-bottom: 2em;
+}
+
+video {
+  width: 100%;
+}

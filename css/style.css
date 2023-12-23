@@ -6,8 +6,8 @@
 }
 
 :root {
-  --bg: #312F42;
-  --fg: #E2E2E2;
+  --bg: #312f42;
+  --fg: #e2e2e2;
   --gap: 1rem;
   --font-family: Raleway;
   --link-font-family: Courier;
@@ -26,26 +26,19 @@ html {
 
 body {
   position: relative;
+  min-height: 95dvh;
+  height: 100svh;
 }
 
 svg {
   fill: var(--fg);
 }
 
-.background {
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  object-position: bottom;
-  object-fit: cover;
-  z-index: -1;
-}
-
 h1 {
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
-  padding-block: 1rem;
+  padding-block: 1em;
 }
 
 h3 {
@@ -73,31 +66,53 @@ ol {
   opacity: 75%;
 }
 
-header {
+nav {
   position: fixed;
-  top: 1rem;
-  display: grid;
-  grid-auto-flow: dense;
-  gap: 1em;
-  width: 100vw;
-  width: 100dvw;
-  margin: 0 auto;
-  align-items: center;
-  text-align: center;
-  justify-items: center;
-  background-color: var(--bg);
+  top: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  width: 300vw;
   z-index: 100;
 }
 
+.logo {
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  height: 3rem;
+}
+
+.navigation {
+  position: absolute;
+  left: 15%;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.socialize svg {
+  position: absolute;
+  right: 205vw;
+  height: 3rem;
+}
+
+.background {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  object-position: bottom;
+  object-fit: cover;
+  z-index: -1;
+}
+
 main {
-  width: 100dvw;
-  height: 100dvh;
+  width: 100svw;
+  height: 100svh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 100%;
   gap: 1rem;
   z-index: +1;
-  
 }
 
 .card {
@@ -113,26 +128,19 @@ main {
 }
 
 .card {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
- :where(article, section) p, ol {
+:where(nav) ul {
+  display: flex;
+}
+
+:where(article, section) p,
+ol {
   margin-inline: auto;
   padding-inline: 5%;
   line-height: 1.25rem;
   text-align: justify;
   max-width: 40rem;
-}
-
-.logo {
-  height: 3rem;
-}
-
-.navigation {
-  grid-column: span 2;
-}
-
-.socialize svg {
-  height: 2rem;
 }
