@@ -6,8 +6,8 @@
 }
 
 :root {
-  --bg: #000000;
-  --fg: #e2e2e2;
+  --bg: #e2e2e2;
+  --fg: #000000;
   --gap: 1rem;
   --font-family: Raleway;
   --link-font-family: Courier;
