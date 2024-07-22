@@ -1,0 +1,39 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*animation*/
+  transition: 300ms;
+}
+
+body {
+  background-color: hsl(34, 78%, 91%);
+  color: rgb(23, 3, 7);
+
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    "header, header, header"
+    "aside, main, main"
+    "aside, main. main";
+}
+
+header {
+  grid-template: header;
+}
+
+main {
+  grid-template: main;
+}
+aside {
+  grid-template: aside;
+}
+
+.hero {
+  width: clamp (100svw - 1em);
+  height: 100svh;
+}
