@@ -146,3 +146,7 @@ ol {
   right: 205vw;
   height: 3rem;
 }
+
+.socialize > svg {
+  height: 2rem;
+}
