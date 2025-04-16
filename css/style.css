@@ -148,5 +148,5 @@ ol {
 }
 
 .socialize > svg {
-  height: 2rem;
+  max-height: 1.25rem;
 }
