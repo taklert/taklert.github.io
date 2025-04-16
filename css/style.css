@@ -90,12 +90,6 @@ nav {
   line-height: 3rem;
 }
 
-.socialize svg {
-  position: absolute;
-  right: 205vw;
-  height: 3rem;
-}
-
 .background {
   width: 100%;
   position: fixed;
@@ -143,4 +137,12 @@ ol {
   line-height: 1.25rem;
   text-align: justify;
   max-width: 40rem;
+}
+
+.socialize {
+  position: absolute;
+  display: inline-flex;
+  justify-content: space-between;
+  right: 205vw;
+  height: 3rem;
 }
