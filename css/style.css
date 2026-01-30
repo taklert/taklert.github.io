@@ -85,7 +85,7 @@ nav {
 
 .navigation {
   
-  left: 15%;
+  gap: 3em;
   text-align: center;
   line-height: 3rem;
 }
